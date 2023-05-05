@@ -1,2 +1,12 @@
-package fr.simplon.gestionnaireentreprise.web;public class LoginController {
+package fr.simplon.gestionnaireentreprise.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class LoginController {
+    @GetMapping("/login")
+    String login() {
+        return "login";
+    }
 }

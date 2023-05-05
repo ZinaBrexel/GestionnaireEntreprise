@@ -1,10 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="col-12 col-md-3 bg" style="background:linear-gradient(to bottom, #10413b , #428845,#2c6943);">
+
+  <!-- Contenu de la Sidebar -->
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg text-white" style="width: 280px;">
+    <a th:href="@{/home}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4">Dashboard</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a th:href="@{/}" class="nav-link text-white">
+          <i class="fas fa-house"></i>
+          Accueil
+        </a>
+      </li>
+      <li class="nav-item">
+        <a th:href="@{/admin/createUser}" class="nav-link text-white">
+          <i class="fas fa-house"></i>
+          Employés
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white">
+          <i class="fas fa-address-book"></i>
+          Annuaire d'entreprise
+        </a>
+      </li>
+      <li class="nav-item">
+        <a th:href="@{/sondage_emp}" class="nav-link text-white">
+          <i class="fas fa-square-poll-vertical"></i>
+          Sondages
+        </a>
+      </li>
+      <li class="nav-item">
+        <a th:href="@{/sondage_result}" class="nav-link text-white">
+          <i class="fas fa-regular fa-star-half-stroke"></i>
+          Résultats des sondages
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white">
+          <i class="fas fa-list-check"></i>
+          Tâches
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white">
+          <i class="fas fa-comments"></i>
+          Messagerie
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </div>
+</div>
